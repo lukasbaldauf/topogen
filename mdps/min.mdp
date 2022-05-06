@@ -3,8 +3,8 @@ nsteps                   = 25
 
 
 coulombtype              = pme 
-rcoulomb                 = 7.0
-fourierspacing           = 0.7
+rcoulomb                 = 2.0
+fourierspacing           = 0.2
 epsilon_r                = 80
 vdw_type                 = cutoff  
 vdw-modifier             = Potential-shift-verlet
