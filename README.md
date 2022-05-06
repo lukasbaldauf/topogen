@@ -16,11 +16,11 @@ Setting up and running a system in GROMACS containing
 <img src="https://github.com/lukasbaldauf/topogen/blob/main/vmdscene.png" width="250" height="250" />
 
 
-
     python topogen.py 'MMMMMMMMMM' 10-alginate
-    ./bonds2constr.sh outfiles/10-alginate.itp outfile/10-alginate.itp
-    
     python topogen.py 'YYY' 3-chitosan
+    
+    # IMPORTANT! Replace stiff bonds by restraints
+    ./bonds2constr.sh outfiles/10-alginate.itp outfile/10-alginate.itp
     ./bonds2constr.sh outfiles/3-chitosan.itp outfile/3-chitosan.itp
     
     cd example
