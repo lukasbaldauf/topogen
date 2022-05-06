@@ -1,0 +1,39 @@
+integrator               = sd
+dt                       = 0.02
+nsteps                   = 2500000
+nstcomm                  = 1
+nstcalcenergy		 = 1
+comm-grps                        =
+
+nstxout                  = 0
+nstvout                  = 0
+nstfout                  = 0
+nstlog                   = 1000
+nstenergy                = 100
+nstxout-compressed       = 50
+compressed-x-precision   = 1000
+
+
+cutoff-scheme            = Verlet
+nstlist                  = 20 ; change to 10 in mdrun by settign -nstlist 10
+ns_type                  = grid
+pbc                      = xyz
+verlet-buffer-tolerance  = 0.005
+
+coulombtype              = pme 
+rcoulomb                 = 7.0
+fourierspacing           = 0.7
+epsilon_r                = 80
+vdw_type                 = cutoff  
+vdw-modifier             = Potential-shift-verlet
+rvdw                     = 1.1
+
+tc-grps                  = System
+tau_t                    = 4.00 
+ref_t                    = 300
+Pcoupl                   = no
+
+gen_vel                  = no
+continuation 		 = yes
+
+constraint_algorithm     = Lincs
