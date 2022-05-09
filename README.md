@@ -12,6 +12,7 @@ More information is coming.
 Generate topolgy files for a length 10 alginate
 
     python topogen.py 'MGMGMGMMMG' 10-alginate
+    # IMPORTANT! Replace stiff bonds by restraints
     ./bonds2constr.sh outfiles/10-alginate.itp outfile/10-alginate.itp
     
 ### Examples
