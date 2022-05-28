@@ -8,5 +8,5 @@ fourierspacing           = 0.2
 epsilon_r                = 80
 vdw_type                 = cutoff  
 vdw-modifier             = Potential-shift-verlet
-rvdw                     = 1.1
+rvdw                     = 1.2
 
