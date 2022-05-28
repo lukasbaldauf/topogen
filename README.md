@@ -48,7 +48,7 @@ Setting up and running a system in GROMACS containing
     mkdir nvt
     cd nvt
     gmx grompp -f ../../mdps/nvt.mdp -c ../min/min.gro -p ../top/topol.top -o nvt.tpr
-    gmx mdrun -deffnm nvt -nstlist 10 -v
+    gmx mdrun -deffnm nvt -v
   
     
     
