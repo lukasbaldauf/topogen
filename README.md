@@ -13,7 +13,8 @@ Generate topolgy files for a length 10 alginate
 
     python topogen.py 'MGMGMGMMMG' 10-alginate
     # IMPORTANT! Replace stiff bonds by restraints
-    ./bonds2constr.sh outfiles/10-alginate.itp outfile/10-alginate.itp
+    # Make bonds2constr executable! (e.g. chmod +x bonds2constr.sh)
+    ./bonds2constr.sh outfiles/10-alginate.itp outfiles/10-alginate.itp
     
 ### Examples
 Setting up and running a system in GROMACS containing
@@ -28,7 +29,7 @@ Setting up and running a system in GROMACS containing
     
     # IMPORTANT! Replace stiff bonds by restraints
     ./bonds2constr.sh outfiles/10-alginate.itp outfile/10-alginate.itp
-    ./bonds2constr.sh outfiles/3-chitosan.itp outfile/3-chitosan.itp
+    ./bonds2constr.sh outfiles/3-chitosan.itp outfiles/3-chitosan.itp
     
     cd example
     gmx editconf -f ../outfiles/10-alginate.gro -box 8 -bt cubic -o tmp.gro
