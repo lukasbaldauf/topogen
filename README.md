@@ -1,7 +1,7 @@
 # topogen
 This program is a tool to generate alginate or chitosan coarse-grained topology files for GROMACS. The model describes the polyelectrolytes alginate and chitosan and their polyelectrolyte complexes in an implicit solvent.
 
-More information is coming.
+More information is in thesis.pdf. 
 
 ### Required packages:
     MDAnalysis
